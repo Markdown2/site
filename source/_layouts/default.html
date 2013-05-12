@@ -8,18 +8,34 @@
 	<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
 	<link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/main.css">
 </head>
-<body>
+<body data-spy="scroll">
 
-<div class="container">
-	<div class="hero-unit">
-		<h1>It is time for Markdown2</h1>
 
-		<p>Amazing new Markdown2 will conform to what you need.</p>
-	</div>
-	{{ content }}
-</div>
+
+{{ content }}
+
+
+<footer>
+	This is footer.
+</footer>
+
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap.js"></script>
+<script type="text/javascript">
+	(function($) {
+		var $window = $(window);
+		setTimeout(function() {
+			$('.nav-affix').affix({
+				offset: {
+					top: 150,
+					bottom: 100
+				}
+			});
+		}, 100);
+		$('table').addClass('table table-striped table-bordered');
+	}(jQuery))
+</script>
 </body>
 </html>

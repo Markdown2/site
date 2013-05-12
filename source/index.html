@@ -1,13 +1,29 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Welcome to Markdown2 home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="navbar navbar-fixed-top navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="/">Markdown2</a>
+			<ul class="nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/syntax/">Syntax</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<header class="header main">
+	<div class="container">
+		<h1>It is time for Markdown2</h1>
+
+		<p class="lead">Amazing new Markdown2 will conform to what you need.</p>
+	</div>
+</header>
+
+<div class="container">
+	here intro about Markdown2
 </div>

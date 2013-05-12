@@ -1,0 +1,47 @@
+---
+layout: default
+title: Markdown2 Syntax
+---
+<div class="navbar navbar-fixed-top navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="brand" href="/">Markdown2</a>
+			<ul class="nav">
+				<li><a href="/">Home</a></li>
+				<li class="active"><a href="/syntax/">Syntax</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<div class="container">
+		<h1>Markdown2 Syntax</h1>
+
+		<p class="lead">learn Markdown2 in 5 minutes. Very easy simple but powerful.</p>
+	</div>
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="span3">
+			<br>
+			<ul class="nav nav-list nav-affix" data-offset-top="200">
+				{% for post in site.categories.syntax %}
+				<li><a href="#{{ post.id | replace:'/','_' }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="span9">
+			{% for post in site.categories.syntax %}
+			<section id="{{ post.id | replace:'/','_'}}">
+				<div class="page-header">
+					<h1>{{ post.title }}</h1>
+				</div>
+				{{ post.content }}
+			</section>
+			{% endfor %}
+		</div>
+	</div>
+</div>
