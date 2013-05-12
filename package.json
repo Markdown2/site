@@ -1,0 +1,27 @@
+{
+  "name": "Markdown2",
+  "version": "2.0.1",
+  "description": "Markdown 2 - new advanced markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Markdown2/site.git"
+  },
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Sergey Romanov",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "a7ebcbb8c7ddc718c2860a9e45cbeec094cf5ed8",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "bower": "~0.8.5",
+    "grunt-jekyll": "~0.3.0"
+  }
+}

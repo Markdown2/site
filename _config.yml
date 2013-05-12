@@ -1,0 +1,5 @@
+name: Markdown2
+pygments: true
+permalink: /:categories/:title
+source: ./source
+destination: ../site
