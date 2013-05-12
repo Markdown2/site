@@ -1,0 +1,32 @@
+<h5 id='sup'>SUP</h5>
+
+<p><code>C^0^</code> = <code>C&lt;sup&gt;&lt;small&gt;0&lt;/small&gt;&lt;/sup&gt;</code> = C<sup><small>0</small></sup><br /><code>Microsoft^&amp;reg;^</code> = <code>Microsoft&lt;sup&gt;&lt;small&gt;&amp;reg;&lt;/small&gt;&lt;/sup&gt;</code> = Microsoft<sup><small>&reg;</small></sup></p>
+
+<h5 id='pre'>PRE</h5>
+
+<p>We always were lacking syntax highlights in Markdown. In Markdown2 you have 2 options. First is media Github Gist and second to use google code prettifier.</p>
+
+<p>If you create side with</p>
+
+<pre><code>```(php)
+&lt;?php echo phpinfo(); ?&gt;
+```</code></pre>
+
+<p>or with tab</p>
+
+<pre><code>	(php)
+	&lt;?php echo phpinfo(); ?&gt;</code></pre>
+
+<p>Just start with language name. This name will be added to <code>&lt;pre&gt;</code> <code>lang-</code> class.</p>
+
+<pre><code>&lt;pre class=&quot;prettyprint lang-php&quot;&gt;</code></pre>
+
+<p>in addition in config you can call prettifier <code>{config}(prettify=1)</code>. See config section for more details and <a href='http://google-code-prettify.googlecode.com/svn/trunk/README.html'>Google code prettifier&#8217;s</a> list of supported languages.</p>
+
+<h2 id='small_and_big'>small and big</h2>
+
+<pre><code>--small-- and ++big++</code></pre>
+
+<p>render as</p>
+
+<pre><code>&lt;small&gt;small&lt;/small&gt; and &lt;big&gt;big&lt;/big&gt;</code></pre>
