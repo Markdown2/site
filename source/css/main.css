@@ -1,7 +1,7 @@
 .header {
     background-image: url("../img/px_by_Gre3g.png");
     padding: 30px 20px;
-    color: #e8ee80;
+    color: #e7e7e7;
     margin-top: 40px;
     text-shadow: 0 0 0 transparent, 0 1px 2px #000000;
 }
@@ -17,7 +17,40 @@
 .nav-affix.affix {
     top: 60px;
 }
+body {
+    background-image: url("../img/gray_jean.png");
+}
+.content {
+    background-color: #fff;
+}
+footer {
+    padding: 30px 20px;
+}
 
+kbd {
+    padding: 0.1em 0.6em;
+    border: 1px solid #CCC;
+    font-size: 11px;
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
+    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #FFF inset;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #FFF inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 0 0.1em;
+    text-shadow: 0 1px 0 #FFF;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+.twitts {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+}
 @media (min-width: 1200px) {
     .nav-affix {
         width: 258px;
