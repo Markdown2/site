@@ -8,11 +8,17 @@
  	css=http://mycss.com/bootstrap.css;
  	javascript=http://mycss.com/bootstrap.js;
  --&gt;</code></pre>
+
+<p>You can type in one line if you want.</p>
+
+<pre><code>&lt;!-- md-config columns=2; prettify=1; --&gt;</code></pre>
+
+<p>Here is the list of all possible configuration values.</p>
 <table><thead><tr><th>Value</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td style='text-align: left;'><code>columns</code></td><td style='text-align: left;'>2</td><td style='text-align: left;'>how many columns document should be. Apply CSS <code>column-count</code> property.</td>
 </tr><tr><td style='text-align: left;'><code>prettify</code></td><td style='text-align: left;'>0</td><td style='text-align: left;'>Will load Google prettifier script on the page al call it.</td>
-</tr><tr><td style='text-align: left;'><code>css</code></td><td style='text-align: left;' /><td style='text-align: left;'>Will import CSS file on the page. You can include few separated by coma.</td>
-</tr><tr><td style='text-align: left;'><code>javascript</code></td><td style='text-align: left;'>Will load external Javascript. You can include few separated by coma.</td><td style='text-align: left;'><code>bootstrap</code></td>
-</tr><tr><td style='text-align: left;'>0</td><td style='text-align: left;'>To load twitter bootstrap CSS vile or not.</td>
+</tr><tr><td style='text-align: left;'><code>css</code></td><td style='text-align: left;'>none</td><td style='text-align: left;'>Will import CSS file on the page. You can include few separated by coma.</td>
+</tr><tr><td style='text-align: left;'><code>javascript</code></td><td style='text-align: left;'>none</td><td style='text-align: left;'>Will load external Javascript. You can include few separated by coma.</td>
+</tr><tr><td style='text-align: left;'><code>bootstrap</code></td><td style='text-align: left;'>0</td><td style='text-align: left;'>To load twitter bootstrap CSS vile or not.</td>
 </tr></tbody></table>
 <p><code>css</code> and <code>javascript</code> result example.</p>
 
@@ -20,9 +26,5 @@
   @import url(&quot;http://mycss.com/bootstrap.css&quot;);
 &lt;/style&gt;
 &lt;script src=&quot;http://mycss.com/bootstrap.js&quot;&gt;&lt;/script&gt;</code></pre>
-
-<p>You can type in one line if you want.</p>
-
-<pre><code>&lt;!-- md-config columns=2; prettify=1; --&gt;</code></pre>
 
 <p>Along with core config parameters you can add any other parameters for your own application. For example <a href='http://jekyllrb.com/'>Jekyll</a> have metadata attached to every <code>.md</code> file. This metadata can go into this part of file.</p>

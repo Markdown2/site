@@ -1,32 +1,102 @@
-<h5 id='sup'>SUP</h5>
+<h2 id='sup'>Sup</h2>
 
-<p><code>C^0^</code> = <code>C&lt;sup&gt;&lt;small&gt;0&lt;/small&gt;&lt;/sup&gt;</code> = C<sup><small>0</small></sup><br /><code>Microsoft^&amp;reg;^</code> = <code>Microsoft&lt;sup&gt;&lt;small&gt;&amp;reg;&lt;/small&gt;&lt;/sup&gt;</code> = Microsoft<sup><small>&reg;</small></sup></p>
+<p><strong>Markdown</strong></p>
 
-<h5 id='pre'>PRE</h5>
+<pre><code>^2^</code></pre>
 
-<p>We always were lacking syntax highlights in Markdown. In Markdown2 you have 2 options. First is media Github Gist and second to use google code prettifier.</p>
+<p><strong>Raw HTML</strong></p>
 
-<p>If you create side with</p>
+<pre><code>&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;</code></pre>
+
+<p><strong>Examples</strong></p>
+<table><thead><tr><th>Markup</th><th>HTML</th><th>Result</th></tr></thead><tbody><tr><td style='text-align: left;'><code>C^0^</code></td><td style='text-align: left;'><code>C&lt;sup&gt;&lt;small&gt;0&lt;/small&gt;&lt;/sup&gt;</code></td><td style='text-align: left;'>C<sup><small>0</small></sup></td>
+</tr><tr><td style='text-align: left;'><code>Compant^&amp;reg;^</code></td><td style='text-align: left;'><code>Company&lt;sup&gt;&lt;small&gt;&amp;reg;&lt;/small&gt;&lt;/sup&gt;</code></td><td style='text-align: left;'>Company<sup><small>&reg;</small></sup></td>
+</tr></tbody></table>
+<h2 id='small_and_big'>Small and Big</h2>
+
+<p>Although <code>&lt;big&gt;</code> is deprecated in HTML5 it is still supported by all browsers and in fact very handy.</p>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>--small text-- and ++big text++</code></pre>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>&lt;small&gt;small text &lt;/small&gt; and &lt;big&gt;big text&lt;/big&gt;</code></pre>
+
+<p><strong>Examples</strong></p>
+<small>small text</small>
+<p>and <big>big text</big></p>
+
+<h2 id='keyboard_keys'>Keyboard keys</h2>
+
+<p>One of the very important thing is <code>&lt;kbd&gt;</code> tag. With proper formating it may be very useful for PC related tutorials. Or comments on <a href='http://superuser.com'>superuser.com</a> or other <a href='http://stackoverflow.com/'>stackoverflow.com</a> like websites.</p>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>Please use [Ctrl]+[v] or [⌘]+[v] for Mac to insert message.</code></pre>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>Please use &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; or &lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; for Mac to insert message.</code></pre>
+
+<p><strong>Examples</strong></p>
+
+<p>Please use <kbd>Ctrl</kbd>+<kbd>v</kbd> or <kbd>⌘</kbd>+<kbd>v</kbd> for Mac to insert message.</p>
+
+<p>It is important to understand how it works if you want to use it.</p>
+
+<ol>
+<li>It will convert any single character in square brackets.</li>
+
+<li>It will convert any string in square brackets from list bellow.</li>
+</ol>
+
+<p>List of allowed strings.</p>
+
+<ul>
+<li><code>[Ctrl]</code></li>
+
+<li><code>[Alt]</code></li>
+
+<li><code>[Shift]</code></li>
+
+<li><code>[Command]</code></li>
+
+<li><code>[Windows]</code></li>
+
+<li><code>[Ctrl *]</code></li>
+
+<li><code>[Alt *]</code></li>
+
+<li><code>[Shift *]</code></li>
+
+<li><code>[Command *]</code></li>
+
+<li><code>[Windows *]</code></li>
+</ul>
+
+<p>Where <code>*</code> is any single symbol. For example <code>[Command ⌘]</code>.</p>
+
+<p>All other texts in single square brackets will be ignored.</p>
+
+<h2 id='code'>Code</h2>
+
+<p>We always were lacking syntax highlights in Markdown. In Markdown 2 you have 2 options. First is <a href='http://#_syntax_Media'>media</a> Github Gist and second to use <a href='https://code.google.com/p/google-code-prettify/'>Google code prettifier</a>.</p>
+
+<p>If you create code йшер quotes, insert language name right after first 3 quotes.</p>
 
 <pre><code>```(php)
 &lt;?php echo phpinfo(); ?&gt;
 ```</code></pre>
 
-<p>or with tab</p>
+<p>If you create code with tabs, insert language as first line.</p>
 
 <pre><code>	(php)
 	&lt;?php echo phpinfo(); ?&gt;</code></pre>
 
-<p>Just start with language name. This name will be added to <code>&lt;pre&gt;</code> <code>lang-</code> class.</p>
+<p>This language name will be added to <code>&lt;pre&gt;</code>&#8217;s <code>lang-</code> class.</p>
 
 <pre><code>&lt;pre class=&quot;prettyprint lang-php&quot;&gt;</code></pre>
 
-<p>in addition in config you can call prettifier <code>{config}(prettify=1)</code>. See config section for more details and <a href='http://google-code-prettify.googlecode.com/svn/trunk/README.html'>Google code prettifier&#8217;s</a> list of supported languages.</p>
-
-<h2 id='small_and_big'>small and big</h2>
-
-<pre><code>--small-- and ++big++</code></pre>
-
-<p>render as</p>
-
-<pre><code>&lt;small&gt;small&lt;/small&gt; and &lt;big&gt;big&lt;/big&gt;</code></pre>
+<p>In addition in config you need to enable prettifier <code>&lt;!-- md-config prettify=1; --&gt;</code>. See <a href='#_syntax_Configuration'>config</a> section for more details and <a href='http://google-code-prettify.googlecode.com/svn/trunk/README.html'>Google code prettifier</a> for list of supported languages to highlight.</p>

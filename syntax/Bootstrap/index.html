@@ -1,4 +1,6 @@
-<p><a href='http://twitter.github.io/bootstrap'>Twitted bootstrap</a> is the most popular from tend development framework nowadays. it is absolutely useful to have support of it. it means that you can use standard bootstrap classes to format your page. And you do not need to style it. Just include <code>bootstrap.css</code></p>
+<p><a href='http://twitter.github.io/bootstrap'>Twitted bootstrap</a> is the most popular frontend development framework nowadays. It is absolutely useful to have support of it. It means that you can use standard bootstrap classes to format your page. And you do not need to style it. Just include <code>bootstrap.css</code>.</p>
+
+<p>On the other hand if you do not use or do not want to use bootstrap, this is still very useful and you can just ad your own CSS to format bootstrap classes that are used by Markdown 2.</p>
 
 <h2 id='badges_and_labels'>Badges and Labels</h2>
 
@@ -30,6 +32,30 @@ are &lt;span class=&quot;label&quot;&gt;unusable&lt;/span&gt;.</code></pre>
 
 <p><strong>Result</strong> <div class='lead'>This is lead text</div></p>
 
+<h2 id='alerts'>Alerts</h2>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>[[ This is yellow alert. ]]
+
+some text 
+
+[[ Important: Another red alert. ]]</code></pre>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>&lt;div class=&quot;alert&quot;&gt;This is yellow alert.&lt;/div&gt;
+&lt;p&gt;some text&lt;/p&gt;
+&lt;div class=&quot;alert alert-error&quot;&gt;Another red alert.&lt;/div&gt;</code></pre>
+
+<p>If there is a <code>:</code> following by the first alert word, this word will become postfix for <code>alert-</code> class.</p>
+<table><thead><tr><th>Indicator</th><th>Class</th><th>Color</th></tr></thead><tbody><tr><td style='text-align: left;'>none</td><td style='text-align: left;'><code>alert</code></td><td style='text-align: left;'>Yeloow</td>
+</tr><tr><td style='text-align: left;'>Important</td><td style='text-align: left;'><code>alert-error</code></td><td style='text-align: left;'>Red</td>
+</tr><tr><td style='text-align: left;'>Info</td><td style='text-align: left;'><code>alert-info</code></td><td style='text-align: left;'>Blue</td>
+</tr><tr><td style='text-align: left;'>Hint</td><td style='text-align: left;'><code>alert-success</code></td><td style='text-align: left;'>Green</td>
+</tr></tbody></table>
+<p><strong>Result</strong></p>
+<div class='alert'>This is yellow alert.</div><p>Another alert</p><div class='alert alert-error'>Another red alert.</div>
 <h2 id='hero_unit'>Hero unit</h2>
 
 <p><strong>Markdown</strong></p>
