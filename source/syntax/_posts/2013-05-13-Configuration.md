@@ -13,6 +13,11 @@ At the bottom of your document you can include configuration section. There you 
 	 	tables_class=table table-stripped;
 	 	css=http://mycss.com/bootstrap.css;
 	 	javascript=http://mycss.com/bootstrap.js;
+	 	author=Sergey Romanov;
+	 	email=myemail@mail.ru;
+	 	gravatar=myemail@mail.ru;
+	 	profile=http://mysite.com;
+	 	date=20013-12-25 00:00:00;
 	 -->
 You can type in one line if you want.
 
@@ -27,6 +32,7 @@ Value         | Default | Description
 `css`         | none    | Will import CSS file on the page. You can include few separated by coma.
 `javascript`  | none    | Will load external Javascript. You can include few separated by coma.
 `bootstrap`   | 0       | To load twitter bootstrap CSS vile or not.
+`date` |  none | Publish date. Will be placed at the bottom of document. Time is optional.
 
 `css` and `javascript` result example.
 
