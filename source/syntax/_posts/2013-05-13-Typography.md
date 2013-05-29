@@ -98,3 +98,146 @@ This language name will be added to `<pre>`'s `lang-` class.
 
 In addition in config you need to enable prettifier `<!-- md-config prettify=1; -->`. See [config](#_syntax_Configuration) section for more details and [Google code prettifier](http://google-code-prettify.googlecode.com/svn/trunk/README.html) for list of supported languages to highlight.
 
+## Table
+
+Although there already is table syntax, to be true it is absolutely unreadable in HTML format. I mean it might looks good for small table but for table with cells where you want to insert code examples or even few paragraphs it turn into complete mess or merely at all impossible. 
+
+This is why we wan to create readable alternative table layout.
+
+**Markdown**
+
+	| Method Name | Description |
+	|===========================|
+	
+	Method Name: `insert()`
+	
+	Description: This method insert values into page. It accept `$list` parameter.
+	
+	- `$list` - array or elements
+	
+	Here is the example
+		
+		<?php  insert(array($page, $header)); ?>
+	|===========================|
+	Method Name: `delete()`
+	Description: This method deletes given element.
+	
+	- `$element` - string element name
+	
+	Here is the example
+		
+		<?php  delete('header'); ?>
+	|__________________________|]
+
+As you can see this is very readable text format of table. First you set header and define number of columns and columns names.
+
+	| Method Name | Description |
+	|===========================|
+
+Then you list your table rows vertically separating them with 
+	
+	|===========================|
+
+And you end table with 
+
+	|__________________________|
+
+There have to be at least 3 symbols between `|`. `|===|` and `|___|` will work as well. 
+
+You start every sell with column name and semicolon `:`. 
+
+	Method Name: `delete()`
+	Description: This method deletes given element.
+
+You can insert new lines between every cell content. This will work as well.
+
+**Raw HTML**
+
+	<table>
+		<thead>
+		<tr>
+			<th>Method Name</th>
+			<th>Description</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>insert()</code></td>
+				<td>
+					<p>This method insert values into page. It accept <code>$list</code> parameter.</p>
+	
+					<ul>
+						<li>
+							<code>$list</code> - array or elements
+						</li>
+					</ul>
+	
+					Here is the example
+	
+					<pre>&lt;?php  insert(array($page, $header)); ?&gt;</pre>
+				</td>
+			</tr>
+			<tr>
+				<td><code>delete()</code></td>
+				<td>
+					<p>This method deletes given element.</p>
+	
+					<ul>
+						<li>
+						<code>$element</code> - string element name
+						</li>
+					</ul>
+	
+					Here is the example
+	
+					<pre>&lt;?php  delete('header'); ?&gt;</pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	
+**Result**
+
+<table>
+	<thead>
+	<tr>
+		<th>Method Name</th>
+		<th>Description</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>insert()</code></td>
+			<td>
+				<p>This method insert values into page. It accept <code>$list</code> parameter.</p>
+
+				<ul>
+					<li>
+						<code>$list</code> - array or elements
+					</li>
+				</ul>
+
+				Here is the example
+
+				<pre>&lt;?php  insert(array($page, $header)); ?&gt;</pre>
+			</td>
+		</tr>
+		<tr>
+			<td><code>delete()</code></td>
+			<td>
+				<p>This method deletes given element.</p>
+
+				<ul>
+					<li>
+					<code>$element</code> - string element name
+					</li>
+				</ul>
+
+				Here is the example
+
+				<pre>&lt;?php  delete('header'); ?&gt;</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
