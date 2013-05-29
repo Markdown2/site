@@ -181,6 +181,148 @@
 <pre><code>&lt;pre class=&quot;prettyprint lang-php&quot;&gt;</code></pre>
 
 <p>In addition in config you need to enable prettifier <code>&lt;!-- md-config prettify=1; --&gt;</code>. See <a href='#_syntax_Configuration'>config</a> section for more details and <a href='http://google-code-prettify.googlecode.com/svn/trunk/README.html'>Google code prettifier</a> for list of supported languages to highlight.</p>
+
+<h2 id='table'>Table</h2>
+
+<p>Although there already is table syntax, to be true it is absolutely unreadable in HTML format. I mean it might looks good for small table but for table with cells where you want to insert code examples or even few paragraphs it turn into complete mess or merely at all impossible.</p>
+
+<p>This is why we wan to create readable alternative table layout.</p>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>| Method Name | Description |
+|===========================|
+
+Method Name: `insert()`
+
+Description: This method insert values into page. It accept `$list` parameter.
+
+- `$list` - array or elements
+
+Here is the example
+	
+	&lt;?php  insert(array($page, $header)); ?&gt;
+|===========================|
+Method Name: `delete()`
+Description: This method deletes given element.
+
+- `$element` - string element name
+
+Here is the example
+	
+	&lt;?php  delete(&#39;header&#39;); ?&gt;
+|__________________________|]</code></pre>
+
+<p>As you can see this is very readable text format of table. First you set header and define number of columns and columns names.</p>
+
+<pre><code>| Method Name | Description |
+|===========================|</code></pre>
+
+<p>Then you list your table rows vertically separating them with</p>
+
+<pre><code>|===========================|</code></pre>
+
+<p>And you end table with</p>
+
+<pre><code>|__________________________|</code></pre>
+
+<p>There have to be at least 3 symbols between <code>|</code>. <code>|===|</code> and <code>|___|</code> will work as well.</p>
+
+<p>You start every sell with column name and semicolon <code>:</code>.</p>
+
+<pre><code>Method Name: `delete()`
+Description: This method deletes given element.</code></pre>
+
+<p>You can insert new lines between every cell content. This will work as well.</p>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>&lt;table&gt;
+	&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Method Name&lt;/th&gt;
+		&lt;th&gt;Description&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;code&gt;insert()&lt;/code&gt;&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;This method insert values into page. It accept &lt;code&gt;$list&lt;/code&gt; parameter.&lt;/p&gt;
+
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;code&gt;$list&lt;/code&gt; - array or elements
+					&lt;/li&gt;
+				&lt;/ul&gt;
+
+				Here is the example
+
+				&lt;pre&gt;&amp;lt;?php  insert(array($page, $header)); ?&amp;gt;&lt;/pre&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&lt;code&gt;delete()&lt;/code&gt;&lt;/td&gt;
+			&lt;td&gt;
+				&lt;p&gt;This method deletes given element.&lt;/p&gt;
+
+				&lt;ul&gt;
+					&lt;li&gt;
+					&lt;code&gt;$element&lt;/code&gt; - string element name
+					&lt;/li&gt;
+				&lt;/ul&gt;
+
+				Here is the example
+
+				&lt;pre&gt;&amp;lt;?php  delete(&#39;header&#39;); ?&amp;gt;&lt;/pre&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+<p><strong>Result</strong></p>
+<table>
+	<thead>
+	<tr>
+		<th>Method Name</th>
+		<th>Description</th>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>insert()</code></td>
+			<td>
+				<p>This method insert values into page. It accept <code>$list</code> parameter.</p>
+
+				<ul>
+					<li>
+						<code>$list</code> - array or elements
+					</li>
+				</ul>
+
+				Here is the example
+
+				<pre>&lt;?php  insert(array($page, $header)); ?&gt;</pre>
+			</td>
+		</tr>
+		<tr>
+			<td><code>delete()</code></td>
+			<td>
+				<p>This method deletes given element.</p>
+
+				<ul>
+					<li>
+					<code>$element</code> - string element name
+					</li>
+				</ul>
+
+				Here is the example
+
+				<pre>&lt;?php  delete('header'); ?&gt;</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
 			</section>
 			
 			<section id="_syntax_Plaseholders">
@@ -299,7 +441,7 @@
 &lt;script  src=&quot;http://codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</code></pre>
 
 <p><strong>Result</strong></p>
-<pre data-safe='false' data-height='300' data-user='johnblazek' class='codepen' data-type='result' data-href='nceyw'><code> </code>
+<pre data-type='result' class='codepen' data-href='nceyw' data-user='johnblazek' data-height='300' data-safe='false'><code> </code>
 <a href='http://codepen.io/johnblazek/pen/nceyw'>Check out this Pen!</a></pre><script src='http://codepen.io/assets/embed/ei.js'> </script>
 <h3 id='github_gists'>Github Gists</h3>
 
