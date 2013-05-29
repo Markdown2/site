@@ -100,7 +100,16 @@ In addition in config you need to enable prettifier `<!-- md-config prettify=1; 
 
 ## Table
 
-Although there already is table syntax, to be true it is absolutely unreadable in HTML format. I mean it might looks good for small table but for table with cells where you want to insert code examples or even few paragraphs it turn into complete mess or merely at all impossible. 
+Although there already is table syntax, to be true it is absolutely unreadable in plain text format. I mean it might looks good for small table like this.
+
+	Name  | Lunch order | Spicy  | Owes
+	------| ----------- | ------ | -----:
+	Joan  | saag paneer | medium | $11
+	Sally | vindaloo    | mild   | $14
+	Erin  | lamb madras | HOT    | $5
+
+
+But for table where cell text may exceed one line in plain text it looks messy. And if you want to insert code examples or few paragraphs it become merely at all impossible. 
 
 This is why we wan to create readable alternative table layout.
 
@@ -118,7 +127,9 @@ This is why we wan to create readable alternative table layout.
 	Here is the example
 		
 		<?php  insert(array($page, $header)); ?>
+		
 	|===========================|
+	
 	Method Name: `delete()`
 	Description: This method deletes given element.
 	
