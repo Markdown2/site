@@ -67,6 +67,12 @@ List of allowed strings.
 - `[Shift]`
 - `[Command]`
 - `[Windows]`
+- `[Tab]`
+- `[Backspace]`
+- `[Insert]`
+- `[Delete]`
+- `[Enter]`
+- `[F(1-16)]`
 - `[Ctrl *]`
 - `[Alt *]`
 - `[Shift *]`
