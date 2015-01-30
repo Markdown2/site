@@ -1,44 +1,71 @@
-<h2 id='sup'>Sup</h2>
+<h2 id="sup">Sup</h2>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>^2^</code></pre>
+<pre><code>^2^
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;</code></pre>
+<pre><code>&lt;sup&gt;&lt;small&gt;2&lt;/small&gt;&lt;/sup&gt;
+</code></pre>
 
 <p><strong>Examples</strong></p>
-<table><thead><tr><th>Markup</th><th>HTML</th><th>Result</th></tr></thead><tbody><tr><td style='text-align: left;'><code>C^0^</code></td><td style='text-align: left;'><code>C&lt;sup&gt;&lt;small&gt;0&lt;/small&gt;&lt;/sup&gt;</code></td><td style='text-align: left;'>C<sup><small>0</small></sup></td>
-</tr><tr><td style='text-align: left;'><code>Compant^&amp;reg;^</code></td><td style='text-align: left;'><code>Company&lt;sup&gt;&lt;small&gt;&amp;reg;&lt;/small&gt;&lt;/sup&gt;</code></td><td style='text-align: left;'>Company<sup><small>&reg;</small></sup></td>
-</tr></tbody></table>
-<h2 id='small_and_big'>Small and Big</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Markup</th>
+      <th>HTML</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>C^0^</code></td>
+      <td><code>C&lt;sup&gt;&lt;small&gt;0&lt;/small&gt;&lt;/sup&gt;</code></td>
+      <td>C<sup><small>0</small></sup></td>
+    </tr>
+    <tr>
+      <td><code>Compant^&amp;reg;^</code></td>
+      <td><code>Company&lt;sup&gt;&lt;small&gt;&amp;reg;&lt;/small&gt;&lt;/sup&gt;</code></td>
+      <td>Company<sup><small>®</small></sup></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="small-and-big">Small and Big</h2>
 
 <p>Although <code>&lt;big&gt;</code> is deprecated in HTML5 it is still supported by all browsers and in fact very handy.</p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>--small text-- and ++big text++</code></pre>
+<pre><code>--small text-- and ++big text++
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;small&gt;small text &lt;/small&gt; and &lt;big&gt;big text&lt;/big&gt;</code></pre>
+<pre><code>&lt;small&gt;small text &lt;/small&gt; and &lt;big&gt;big text&lt;/big&gt;
+</code></pre>
 
 <p><strong>Examples</strong></p>
-<small>small text</small>
-<p>and <big>big text</big></p>
 
-<h2 id='keyboard_keys'>Keyboard keys</h2>
+<p><small>small text</small>
+and <big>big text</big></p>
 
-<p>One of the very important thing is <code>&lt;kbd&gt;</code> tag. With proper formating it may be very useful for PC related tutorials. Or comments on <a href='http://superuser.com'>superuser.com</a> or other <a href='http://stackoverflow.com/'>stackoverflow.com</a> like websites.</p>
+<h2 id="keyboard-keys">Keyboard keys</h2>
+
+<p>One of the very important thing is <code>&lt;kbd&gt;</code> tag. With proper formating it may be very useful for PC related tutorials. Or comments on <a href="http://superuser.com">superuser.com</a> or other <a href="http://stackoverflow.com/">stackoverflow.com</a> like websites.  </p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>Please use [Ctrl]+[v] or [⌘]+[v] for Mac to insert message.</code></pre>
+<pre><code>Please use [Ctrl]+[v] or [⌘]+[v] for Mac to insert message.
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>Please use &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; or &lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; for Mac to insert message.</code></pre>
+<pre><code>Please use &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; or &lt;kbd&gt;⌘&lt;/kbd&gt;+&lt;kbd&gt;v&lt;/kbd&gt; for Mac to insert message.
+</code></pre>
 
 <p><strong>Examples</strong></p>
 
@@ -47,73 +74,60 @@
 <p>It is important to understand how it works if you want to use it.</p>
 
 <ol>
-<li>It will convert any single character in square brackets.</li>
-
-<li>It will convert any string in square brackets from list bellow.</li>
+  <li>It will convert any single character in square brackets.</li>
+  <li>It will convert any string in square brackets from list bellow.</li>
 </ol>
 
 <p>List of allowed strings.</p>
 
 <ul>
-<li><code>[Ctrl]</code></li>
-
-<li><code>[Alt]</code></li>
-
-<li><code>[Shift]</code></li>
-
-<li><code>[Command]</code></li>
-
-<li><code>[Windows]</code></li>
-
-<li><code>[Tab]</code></li>
-
-<li><code>[Backspace]</code></li>
-
-<li><code>[Insert]</code></li>
-
-<li><code>[Delete]</code></li>
-
-<li><code>[Enter]</code></li>
-
-<li><code>[F(1-16)]</code></li>
-
-<li><code>[Ctrl *]</code></li>
-
-<li><code>[Alt *]</code></li>
-
-<li><code>[Shift *]</code></li>
-
-<li><code>[Command *]</code></li>
-
-<li><code>[Windows *]</code></li>
+  <li><code>[Ctrl]</code></li>
+  <li><code>[Alt]</code></li>
+  <li><code>[Shift]</code></li>
+  <li><code>[Command]</code></li>
+  <li><code>[Windows]</code></li>
+  <li><code>[Tab]</code></li>
+  <li><code>[Backspace]</code></li>
+  <li><code>[Insert]</code></li>
+  <li><code>[Delete]</code></li>
+  <li><code>[Enter]</code></li>
+  <li><code>[F(1-16)]</code></li>
+  <li><code>[Ctrl *]</code></li>
+  <li><code>[Alt *]</code></li>
+  <li><code>[Shift *]</code></li>
+  <li><code>[Command *]</code></li>
+  <li><code>[Windows *]</code></li>
 </ul>
 
 <p>Where <code>*</code> is any single symbol. For example <code>[Command ⌘]</code>.</p>
 
 <p>All other texts in single square brackets will be ignored.</p>
 
-<h2 id='code'>Code</h2>
+<h2 id="code">Code</h2>
 
-<p>We always were lacking syntax highlights in Markdown. In Markdown 2 you have 2 options. First is <a href='http://#_syntax_Media'>media</a> Github Gist and second to use <a href='https://code.google.com/p/google-code-prettify/'>Google code prettifier</a>.</p>
+<p>We always were lacking syntax highlights in Markdown. In Markdown 2 you have 2 options. First is <a href="http://#_syntax_Media">media</a> Github Gist and second to use <a href="https://code.google.com/p/google-code-prettify/">Google code prettifier</a>. </p>
 
-<p>If you create code йшер quotes, insert language name right after first 3 quotes.</p>
+<p>If you create code йшер quotes, insert language name right after first 3 quotes. </p>
 
 <pre><code>```(php)
 &lt;?php echo phpinfo(); ?&gt;
-```</code></pre>
+```
+</code></pre>
 
 <p>If you create code with tabs, insert language as first line.</p>
 
 <pre><code>	(php)
-	&lt;?php echo phpinfo(); ?&gt;</code></pre>
+	&lt;?php echo phpinfo(); ?&gt;
+</code></pre>
 
-<p>This language name will be added to <code>&lt;pre&gt;</code>&#8217;s <code>lang-</code> class.</p>
+<p>This language name will be added to <code>&lt;pre&gt;</code>’s <code>lang-</code> class.</p>
 
-<pre><code>&lt;pre class=&quot;prettyprint lang-php&quot;&gt;</code></pre>
+<pre><code>&lt;pre class="prettyprint lang-php"&gt;
+</code></pre>
 
-<p>In addition in config you need to enable prettifier <code>&lt;!-- md-config prettify=1; --&gt;</code>. See <a href='#_syntax_Configuration'>config</a> section for more details and <a href='http://google-code-prettify.googlecode.com/svn/trunk/README.html'>Google code prettifier</a> for list of supported languages to highlight.</p>
+<p>In addition in config you need to enable prettifier <code>&lt;!-- md-config prettify=1; --&gt;</code>. See <a href="#_syntax_Configuration">config</a> section for more details and <a href="http://google-code-prettify.googlecode.com/svn/trunk/README.html">Google code prettifier</a> for list of supported languages to highlight.</p>
 
-<h2 id='table'>Table</h2>
+<h2 id="table">Table</h2>
 
 <p>Although there already is table syntax, to be true it is absolutely unreadable in plain text format. I mean it might looks good for small table like this.</p>
 
@@ -121,9 +135,10 @@
 ------| ----------- | ------ | -----:
 Joan  | saag paneer | medium | $11
 Sally | vindaloo    | mild   | $14
-Erin  | lamb madras | HOT    | $5</code></pre>
+Erin  | lamb madras | HOT    | $5
+</code></pre>
 
-<p>But for table where cell text may exceed one line in plain text it looks messy. And if you want to insert code examples or few paragraphs it become merely at all impossible.</p>
+<p>But for table where cell text may exceed one line in plain text it looks messy. And if you want to insert code examples or few paragraphs it become merely at all impossible. </p>
 
 <p>This is why we wan to create readable alternative table layout.</p>
 
@@ -151,28 +166,33 @@ Description: This method deletes given element.
 
 Here is the example
 	
-	&lt;?php  delete(&#39;header&#39;); ?&gt;
-|__________________________|]</code></pre>
+	&lt;?php  delete('header'); ?&gt;
+|__________________________|]
+</code></pre>
 
 <p>As you can see this is very readable text format of table. First you set header and define number of columns and columns names.</p>
 
 <pre><code>| Method Name | Description |
-|===========================|</code></pre>
+|===========================|
+</code></pre>
 
-<p>Then you list your table rows vertically separating them with</p>
+<p>Then you list your table rows vertically separating them with </p>
 
-<pre><code>|===========================|</code></pre>
+<pre><code>|===========================|
+</code></pre>
 
-<p>And you end table with</p>
+<p>And you end table with </p>
 
-<pre><code>|__________________________|</code></pre>
+<pre><code>|__________________________|
+</code></pre>
 
-<p>There have to be at least 3 symbols between <code>|</code>. <code>|===|</code> and <code>|___|</code> will work as well.</p>
+<p>There have to be at least 3 symbols between <code>|</code>. <code>|===|</code> and <code>|___|</code> will work as well. </p>
 
-<p>You start every sell with column name and semicolon <code>:</code>.</p>
+<p>You start every sell with column name and semicolon <code>:</code>. </p>
 
 <pre><code>Method Name: `delete()`
-Description: This method deletes given element.</code></pre>
+Description: This method deletes given element.
+</code></pre>
 
 <p>You can insert new lines between every cell content. This will work as well.</p>
 
@@ -215,13 +235,15 @@ Description: This method deletes given element.</code></pre>
 
 				Here is the example
 
-				&lt;pre&gt;&amp;lt;?php  delete(&#39;header&#39;); ?&amp;gt;&lt;/pre&gt;
+				&lt;pre&gt;&amp;lt;?php  delete('header'); ?&amp;gt;&lt;/pre&gt;
 			&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+&lt;/table&gt;
+</code></pre>
 
 <p><strong>Result</strong></p>
+
 <table>
 	<thead>
 	<tr>
@@ -264,3 +286,4 @@ Description: This method deletes given element.</code></pre>
 		</tr>
 	</tbody>
 </table>
+

@@ -2,89 +2,133 @@
 
 <p>The main <code>{media}</code> syntax looks like this</p>
 
-<pre><code>{media}([service]::[options])</code></pre>
+<pre><code>{media}([service]::[options])
+</code></pre>
 
 <p>We tried to make it similar to current image and link syntax. Thus <code>{media}</code> supports short links.</p>
 
 <pre><code>{media}(m1)
-[m1]: img::http://mycss.com/logo.png::img-rounded::left</code></pre>
+[m1]: img::http://mycss.com/logo.png::img-rounded::left
+</code></pre>
 
-<h2 id='picture'>Picture</h2>
+<h2 id="picture">Picture</h2>
 
 <p>Although there is already syntax to insert picture, we really think that this should be more flexible.</p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>{media}(img::http://mycss.com/logo.png::img-rounded::left)</code></pre>
+<pre><code>{media}(img::http://mycss.com/logo.png::img-rounded::left)
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;img src=&quot;http://mycss.com/logo.png&quot; align=&quot;left&quot; class=&quot;img-rounded&quot;&gt;</code></pre>
+<pre><code>&lt;img src="http://mycss.com/logo.png" align="left" class="img-rounded"&gt;
+</code></pre>
 
-<h2 id='video'>Video</h2>
+<h2 id="video">Video</h2>
 
 <p>This one of the most desired feature to insert video into your documents.</p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>{media}(youtube::ww8kIy9BtsU::420)</code></pre>
+<pre><code>{media}(youtube::ww8kIy9BtsU::420)
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ww8kIy9BtsU&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+<pre><code>&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/ww8kIy9BtsU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</code></pre>
 
 <p>Available sizes are <code>420</code>, <code>480</code>, <code>640</code> and <code>960</code>. Size parameter is optional and by default it is <code>680</code>.</p>
-<table><thead><tr><th>Icon</th><th>Service</th><th>Description</th></tr></thead><tbody><tr><td style='text-align: left;'><img src='http://www.cinemamuseum.org.uk/wordpress/wp-content/themes/Cutline-1-1.4-2ColumnRight/images/youtube-logo.gif' alt='youtube logo' /></td><td style='text-align: left;'><a href='http://www.youtube.com'>YouTube</a></td><td style='text-align: left;'>inserts video from youtube. First parameter is video key which you can copy from URL or from embed url option under safe tab.</td>
-</tr><tr><td style='text-align: left;'><img src='http://cdn1.iconfinder.com/data/icons/fatcow/32x32/vimeo.png' alt='vimeo' /></td><td style='text-align: left;'><a href='http://www.vimeo.com'>Vimeo</a></td><td style='text-align: left;'>Vimeo service was chosen because it&#8217;s awesome features like for example domain restriction where video may be played.</td>
-</tr><tr><td style='text-align: left;'><img src='http://cdn.alternativeto.net/i/be16881a-f0b6-e011-9727-0025902c7e73_12342.png' alt='screencast' /></td><td style='text-align: left;'><a href='http://www.screencast.com'>Screencast</a></td><td style='text-align: left;'>screencast.com is a free video hosting that allow to post video with support of quizzes, TOC, internal navigations and many more. You can produce video in <a href='http://www.techsmith.com/camtasia.html'>Camtasia studio</a> which allows to create fully featureable, interactive education videos.</td>
-</tr></tbody></table>
-<h3 id='js_bin'>JS Bin</h3>
 
-<p><a href='http://jsbin.com/'>JS Bin</a> is one of the most popular service for creating JS/HTML/CSS snippets or code examples. Very convenient way to insert as demo and HTML, CSS and JS source in single beautiful box.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Service</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="http://www.cinemamuseum.org.uk/wordpress/wp-content/themes/Cutline-1-1.4-2ColumnRight/images/youtube-logo.gif" alt="youtube logo" /></td>
+      <td><a href="http://www.youtube.com">YouTube</a></td>
+      <td>inserts video from youtube. First parameter is video key which you can copy from URL or from embed url option under safe tab.</td>
+    </tr>
+    <tr>
+      <td><img src="http://cdn1.iconfinder.com/data/icons/fatcow/32x32/vimeo.png" alt="vimeo" /></td>
+      <td><a href="http://www.vimeo.com">Vimeo</a></td>
+      <td>Vimeo service was chosen because it’s awesome features like for example domain restriction where video may be played.</td>
+    </tr>
+    <tr>
+      <td><img src="http://cdn.alternativeto.net/i/be16881a-f0b6-e011-9727-0025902c7e73_12342.png" alt="screencast" /></td>
+      <td><a href="http://www.screencast.com">Screencast</a></td>
+      <td>screencast.com is a free video hosting that allow to post video with support of quizzes, TOC, internal navigations and many more. You can produce video in <a href="http://www.techsmith.com/camtasia.html">Camtasia studio</a> which allows to create fully featureable, interactive education videos.</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><strong>Markdown</strong></p>
+<h3 id="js-bin">JS Bin</h3>
 
-<pre><code>{media}(jsbin::avamas/9)</code></pre>
-
-<p><strong>Raw HTML</strong></p>
-
-<pre><code>&lt;a class=&quot;jsbin-embed&quot; href=&quot;http://jsbin.com/avamas/9/embed?live&quot;&gt;JS Bin&lt;/a&gt;
-&lt;script src=&quot;http://static.jsbin.com/js/embed.js&quot;&gt;&lt;/script&gt;</code></pre>
-
-<p><strong>Result</strong></p>
-<a class='jsbin-embed' href='http://jsbin.com/avamas/9/embed?live'>JS Bin</a><script src='http://static.jsbin.com/js/embed.js'> </script>
-<h3 id='codepen'>Codepen</h3>
-
-<p><a href='http://codepen.io/'>Codepen</a> is another HTML/CSS/JS code example library. It is also very social and you can browse nice examples and use those as inspiration. And if you want to safe one of those right in your text, here it is.</p>
-
-<p><strong>Markdown</strong></p>
-
-<pre><code>{media}(codepen::johnblazek::nceyw::300)</code></pre>
-
-<p>First parameter is a user name and second it snippet short code name. last one is the height of the example block. You can find those parameters when you click <em>share</em> button on Codepen website.</p>
-
-<p><img src='/site/img/codepen.png' alt='' /></p>
-
-<p><strong>Raw HTML</strong></p>
-
-<pre><code>&lt;pre class=&quot;codepen&quot; data-height=&quot;300&quot; data-type=&quot;result&quot; data-href=&quot;nceyw&quot; data-user=&quot;johnblazek&quot; data-safe=&quot;false&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;a href=&quot;http://codepen.io/johnblazek/pen/nceyw&quot;&gt;Check out this Pen!&lt;/a&gt;&lt;/pre&gt;
-&lt;script  src=&quot;http://codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;</code></pre>
-
-<p><strong>Result</strong></p>
-<pre data-safe='false' class='codepen' data-height='300' data-user='johnblazek' data-href='nceyw' data-type='result'><code> </code>
-<a href='http://codepen.io/johnblazek/pen/nceyw'>Check out this Pen!</a></pre><script src='http://codepen.io/assets/embed/ei.js'> </script>
-<h3 id='github_gists'>Github Gists</h3>
-
-<p><a href='https://gist.github.com/'>GitHub Gists</a> may allow you to insert syntax highlighted code examples. Although now you can syntax highlight in typography too, gists will пуму you so much more. If you use gists, code sample will be automatically updated in the article when you or someone updated it in gist. This is very handy to have always latest actual code example without worry to update your article.</p>
+<p><a href="http://jsbin.com/">JS Bin</a> is one of the most popular service for creating JS/HTML/CSS snippets or code examples.  Very convenient way to insert as demo and HTML, CSS and JS source in single beautiful box.</p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>{media}(gist::vdemedes/5220932::gistfile1.js)</code></pre>
+<pre><code>{media}(jsbin::avamas/9)
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;script src=&quot;https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js&quot;&gt;&lt;/script&gt;</code></pre>
+<pre><code>&lt;a class="jsbin-embed" href="http://jsbin.com/avamas/9/embed?live"&gt;JS Bin&lt;/a&gt;
+&lt;script src="http://static.jsbin.com/js/embed.js"&gt;&lt;/script&gt;
+</code></pre>
 
 <p><strong>Result</strong></p>
-<script src='https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js'> </script>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/avamas/9/embed?live">JS Bin</a>
+<script src="http://static.jsbin.com/js/embed.js"> </script></p>
+
+<h3 id="codepen">Codepen</h3>
+
+<p><a href="http://codepen.io/">Codepen</a>  is another HTML/CSS/JS code example library. It is also very social and you can browse nice examples and use those as inspiration. And if you want to safe one of those right in your text, here it is. </p>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>{media}(codepen::johnblazek::nceyw::300)
+</code></pre>
+
+<p>First parameter is a user name and second it snippet short code name. last one is the height of the example block. You can find those parameters when you click <em>share</em> button on Codepen website. </p>
+
+<p><img src="/site/img/codepen.png" alt="" /></p>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>&lt;pre class="codepen" data-height="300" data-type="result" data-href="nceyw" data-user="johnblazek" data-safe="false"&gt;&lt;code&gt;&lt;/code&gt;&lt;a href="http://codepen.io/johnblazek/pen/nceyw"&gt;Check out this Pen!&lt;/a&gt;&lt;/pre&gt;
+&lt;script  src="http://codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p><strong>Result</strong></p>
+
+<pre class="codepen" data-height="300" data-type="result" data-href="nceyw" data-user="johnblazek" data-safe="false"><code> </code>
+<a href="http://codepen.io/johnblazek/pen/nceyw">Check out this Pen!</a></pre>
+<script src="http://codepen.io/assets/embed/ei.js"> </script>
+
+<h3 id="github-gists">Github Gists</h3>
+
+<p><a href="https://gist.github.com/">GitHub Gists</a> may allow you to insert syntax highlighted code examples. Although now you can syntax highlight in typography too, gists will пуму you so much more. If you use gists, code sample will be automatically updated in the article when you or someone updated it in gist. This is very handy to have always latest actual code example without worry to update your article.</p>
+
+<p><strong>Markdown</strong></p>
+
+<pre><code>{media}(gist::vdemedes/5220932::gistfile1.js)
+</code></pre>
+
+<p><strong>Raw HTML</strong></p>
+
+<pre><code>&lt;script src="https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p><strong>Result</strong></p>
+
+<script src="https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js"> </script>
+
 <p>File parameter is optional and can be used only in Gists with few files when you want to show only one of them.</p>

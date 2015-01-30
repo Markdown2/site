@@ -1,38 +1,43 @@
-<p><a href='http://twitter.github.io/bootstrap'>Twitted bootstrap</a> is the most popular frontend development framework nowadays. It is absolutely useful to have support of it. It means that you can use standard bootstrap classes to format your page. And you do not need to style it. Just include <code>bootstrap.css</code>.</p>
+<p><a href="http://twitter.github.io/bootstrap">Twitted bootstrap</a> is the most popular frontend development framework nowadays. It is absolutely useful to have support of it. It means that you can use standard bootstrap classes to format your page. And you do not need to style it. Just include <code>bootstrap.css</code>.</p>
 
 <p>On the other hand if you do not use or do not want to use bootstrap, this is still very useful and you can just ad your own CSS to format bootstrap classes that are used by Markdown 2.</p>
 
-<h2 id='badges_and_labels'>Badges and Labels</h2>
+<h2 id="badges-and-labels">Badges and Labels</h2>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>There are ((12)) pieces but only !((5)) of them are ![[usable]] and ((7)) are [[unusable]].</code></pre>
+<pre><code>There are ((12)) pieces but only !((5)) of them are ![[usable]] and ((7)) are [[unusable]].
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>There are &lt;span class=&quot;badge&quot;&gt;12&lt;/span&gt; pieces but only &lt;span class=&quot;badge badge-important&quot;&gt;5&lt;/span&gt;
-of them are &lt;span class=&quot;label label-important&quot;&gt;usable&lt;/span&gt; and &lt;span class=&quot;badge&quot;&gt;12&lt;/span&gt; 
-are &lt;span class=&quot;label&quot;&gt;unusable&lt;/span&gt;.</code></pre>
+<pre><code>There are &lt;span class="badge"&gt;12&lt;/span&gt; pieces but only &lt;span class="badge badge-important"&gt;5&lt;/span&gt;
+of them are &lt;span class="label label-important"&gt;usable&lt;/span&gt; and &lt;span class="badge"&gt;12&lt;/span&gt; 
+are &lt;span class="label"&gt;unusable&lt;/span&gt;.
+</code></pre>
 
 <p><strong>Result</strong></p>
 
-<p>There are <span class='badge'>12</span> pieces but only <span class='badge badge-important'>5</span> of them are <span class='label label-important'>usable</span> and <span class='badge'>12</span> are <span class='label'>unusable</span>.</p>
+<p>There are <span class="badge">12</span> pieces but only <span class="badge badge-important">5</span> of them are <span class="label label-important">usable</span> and <span class="badge">12</span> are <span class="label">unusable</span>.</p>
 
-<h2 id='lead_text'>Lead text</h2>
+<h2 id="lead-text">Lead text</h2>
 
 <p>lead text is just like blockquote starts with <code>&gt;</code> but with <code>!!!</code></p>
 
 <p><strong>Markdown</strong></p>
 
-<pre><code>!!! This is is lead text</code></pre>
+<pre><code>!!! This is is lead text
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;div class=&quot;lead&quot;&gt;This is lead text&lt;/div&gt;</code></pre>
+<pre><code>&lt;div class="lead"&gt;This is lead text&lt;/div&gt;
+</code></pre>
 
-<p><strong>Result</strong> <div class='lead'>This is lead text</div></p>
+<p><strong>Result</strong>
+&lt;div class="lead"&gt;This is lead text&lt;/div&gt;</p>
 
-<h2 id='alerts'>Alerts</h2>
+<h2 id="alerts">Alerts</h2>
 
 <p><strong>Markdown</strong></p>
 
@@ -40,23 +45,57 @@ are &lt;span class=&quot;label&quot;&gt;unusable&lt;/span&gt;.</code></pre>
 
 some text 
 
-[[ Important: Another red alert. ]]</code></pre>
+[[ Important: Another red alert. ]]
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;div class=&quot;alert&quot;&gt;This is yellow alert.&lt;/div&gt;
+<pre><code>&lt;div class="alert"&gt;This is yellow alert.&lt;/div&gt;
 &lt;p&gt;some text&lt;/p&gt;
-&lt;div class=&quot;alert alert-error&quot;&gt;Another red alert.&lt;/div&gt;</code></pre>
+&lt;div class="alert alert-error"&gt;Another red alert.&lt;/div&gt;
+</code></pre>
 
-<p>If there is a <code>:</code> following by the first alert word, this word will become postfix for <code>alert-</code> class.</p>
-<table><thead><tr><th>Indicator</th><th>Class</th><th>Color</th></tr></thead><tbody><tr><td style='text-align: left;'>none</td><td style='text-align: left;'><code>alert</code></td><td style='text-align: left;'>Yeloow</td>
-</tr><tr><td style='text-align: left;'>Important</td><td style='text-align: left;'><code>alert-error</code></td><td style='text-align: left;'>Red</td>
-</tr><tr><td style='text-align: left;'>Info</td><td style='text-align: left;'><code>alert-info</code></td><td style='text-align: left;'>Blue</td>
-</tr><tr><td style='text-align: left;'>Hint</td><td style='text-align: left;'><code>alert-success</code></td><td style='text-align: left;'>Green</td>
-</tr></tbody></table>
+<p>If there is a <code>:</code> following by the first alert word, this word will become postfix for <code>alert-</code> class. </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicator</th>
+      <th>Class</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>none</td>
+      <td><code>alert</code></td>
+      <td>Yeloow</td>
+    </tr>
+    <tr>
+      <td>Important</td>
+      <td><code>alert-error</code></td>
+      <td>Red</td>
+    </tr>
+    <tr>
+      <td>Info</td>
+      <td><code>alert-info</code></td>
+      <td>Blue</td>
+    </tr>
+    <tr>
+      <td>Hint</td>
+      <td><code>alert-success</code></td>
+      <td>Green</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><strong>Result</strong></p>
-<div class='alert'>This is yellow alert.</div><p>Another alert</p><div class='alert alert-error'>Another red alert.</div>
-<h2 id='hero_unit'>Hero unit</h2>
+
+<div class="alert">This is yellow alert.</div>
+<p>Another alert</p>
+<div class="alert alert-error">Another red alert.</div>
+
+<h2 id="hero-unit">Hero unit</h2>
 
 <p><strong>Markdown</strong></p>
 
@@ -66,16 +105,19 @@ Welcome To Markdown2
 
 Awesome way to create text to HTML documents.
 
-#####################################</code></pre>
+#####################################
+</code></pre>
 
 <p><strong>Raw HTML</strong></p>
 
-<pre><code>&lt;div class=&quot;hero-unit&quot;&gt;
+<pre><code>&lt;div class="hero-unit"&gt;
 	&lt;h1&gt;Welcome To Markdown2&lt;/h1&gt;
 	&lt;p&gt;Awesome way to create text to HTML documents.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 
-<p><strong>Result</strong> <div class='hero-unit'>
-	<h1>Welcome To Markdown2</h1>
-	<p>Awesome way to create text to HTML documents.</p>
-</div></p>
+<p><strong>Result</strong>
+&lt;div class="hero-unit"&gt;
+	&lt;h1&gt;Welcome To Markdown2&lt;/h1&gt;
+	&lt;p&gt;Awesome way to create text to HTML documents.&lt;/p&gt;
+&lt;/div&gt;</p>
