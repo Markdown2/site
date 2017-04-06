@@ -1,4 +1,2 @@
-Jekyll Source
+This repo moved to [new repo](https://github.com/Markdown2/markdown2.github.io)
 ===
-
-This is the source for [markdown2 website](http://markdown2.github.io/site/).
