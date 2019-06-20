@@ -1,3 +1,55 @@
 site_name: Markdown 2 Documentation
+site_description: New specification for Markdown, with advanced syntax and new elements to style your documents.
+copyright: 2019 Markdown 2
+site_author: Sergey Romanov
+site_url: http://markdown2.github.io/Documentation/
 docs_dir: src
 site_dir: docs
+dev_addr: localhost:4455
+
+# Site configuration
+
+# Repository configuration
+repo_name: Github
+repo_url: https://github.com/Markdown2/Documentation
+
+# Theme configuration
+#theme: readthedocs 
+theme: 
+    name: 'material'
+    include_search_page: false
+    search_index_only: true
+    language: 'ru'
+    feature:
+        tabs: true
+    palette:
+        primary: 'indigo'
+        accent: 'deeppurple'
+    favicon: ''
+    logo:
+        icon: "\uE86D"
+
+extra:
+  search:
+    language: 'ru, en'
+
+#extra_css: 
+#    - css/style.css
+#    - css/highlights.css
+
+# Other
+markdown_extensions:
+    - footnotes:
+    - codehilite:
+        linenums: true
+    - admonition
+    - pymdownx.mark
+    - pymdownx.inlinehilite
+    - pymdownx.highlight
+
+# Pages configuration
+pages:
+- Введение: 
+    - 'О Документации': 'index.md'
+- Documentation: 
+    - 'Typography': 'typography.md'
