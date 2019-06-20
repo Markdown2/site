@@ -1,6 +1,0 @@
-name: Markdown2
-pygments: true
-permalink: /:categories/:title
-source: ./source
-destination: ../site
-url: http://markdown2.org
