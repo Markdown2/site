@@ -53,3 +53,4 @@ pages:
     - 'О Документации': 'index.md'
 - Documentation: 
     - 'Typography': 'typography.md'
+    - 'Parser config': 'configuration.md'
