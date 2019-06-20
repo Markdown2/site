@@ -123,162 +123,63 @@ Please use <kbd>Ctrl</kbd>+<kbd>v</kbd> or <kbd>⌘</kbd>+<kbd>v</kbd> for Mac t
 
 - `kbd-class` - add css class to `<kbd>` tags
 
-## Code
-
-In standard code is indent. And it is already a standard to use ` for inline code and ``` for block code. Nothing is changed here, I add it here for configuration options.
+## Definition Lists
 
 ### Markdown
 
-    ```php
-        <?php echo phpinfo(); ?>
-    ```
-
-### Example
-
-```php
-<?php echo phpinfo(); ?>
 ```
-
-### Configuration
-
-- `code` - Engine to highlight syntax prism or highlightjs
-- `code-theme` - Color them
-
-## Table
-
-Although there already is table syntax, it only works for small tables with width less than 80 symbols and without multiple lines in a cell.
-
-```md
-| Name  | Lunch order | Spicy  | Owes |
-| ----- | ----------- | ------ | ---: |
-| Joan  | saag paneer | medium |  $11 |
-| Sally | vindaloo    | mild   |  $14 |
-| Erin  | lamb madras | HOT    |   $5 |
+- Name:: John Doe
+- Position:: Director
 ```
-
-Sometimes we heed to create big table with multiple lines in cells and even other markdowns like code Result. On the other hand it should be still highly readable as a plain text document.
-
-### Markdown
-
-    ===========================
-    Method Name:: `insert()`
-    Description:: This method insert values into page. It accept `$list` parameter.
-
-    - `$list` - array or elements
-     
-    Here is the example
-            
-    ```php
-    <?php  insert(array($page, $header)); ?>
-    ```
-
-    ===========================
-    Method Name:: `delete()`
-    Description:: This method deletes given element.
-        
-    - `$element` - string element name
-        
-    Here is the example
-       
-    ```php
-    <?php  delete('header'); ?>
-    ```
-    ==========================
-
-As you can see this is very readable as text but we have all to generate a table. Long `======================` define table start and end and separation between rows.
-
-You start every cell with column name and double semicolon `::`.
-
-> All names of columns have to be the same in every row.
 
 ### Raw HTML
 
 ```html
-<table>
-    <thead>
-    <tr>
-        <th>Method Name</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td><code>insert()</code></td>
-            <td>
-                <p>This method insert values into page. It accept <code>$list</code> parameter.</p>
-
-                <ul>
-                    <li>
-                        <code>$list</code> - array or elements
-                    </li>
-                </ul>
-
-                Here is the example
-
-                <pre>&lt;?php  insert(array($page, $header)); ?&gt;</pre>
-            </td>
-        </tr>
-        <tr>
-            <td><code>delete()</code></td>
-            <td>
-                <p>This method deletes given element.</p>
-
-                <ul>
-                    <li>
-                    <code>$element</code> - string element name
-                    </li>
-                </ul>
-
-                Here is the example
-
-                <pre>&lt;?php  delete('header'); ?&gt;</pre>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<dl>
+    <dt>Name</dt>
+    <dd>John Doe</dd>
+    <dt>Position</dt>
+    <dd>Director</dd>
+</dl>
 ```
 
 ### Result
 
-<table>
-	<thead>
-	<tr>
-		<th>Method Name</th>
-		<th>Description</th>
-	</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><code>insert()</code></td>
-			<td>
-				<p>This method insert values into page. It accept <code>$list</code> parameter.</p>
+<dl>
+    <dt>Name</dt>
+    <dd>John Doe</dd>
+    <dt>Position</dt>
+    <dd>Director</dd>
+</dl>
 
-				<ul>
-					<li>
-						<code>$list</code> - array or elements
-					</li>
-				</ul>
+## Badges and Labels
 
-				Here is the example
+Badges and labels is another way to highlight text inline.
 
-				<pre>&lt;?php  insert(array($page, $header)); ?&gt;</pre>
-			</td>
-		</tr>
-		<tr>
-			<td><code>delete()</code></td>
-			<td>
-				<p>This method deletes given element.</p>
+### Markdown
 
-				<ul>
-					<li>
-					<code>$element</code> - string element name
-					</li>
-				</ul>
+```
+There are ((12)) pieces but only !((5)) of them are ![[usable]] and ((7)) are [[unusable]].
+```
 
-				Here is the example
+- `((x))` - badge
+- `!((x))` - badge with accent
+- `[[x]]` - label
+- `![[x]]` - label with accent
 
-				<pre>&lt;?php  delete('header'); ?&gt;</pre>
-			</td>
-		</tr>
-	</tbody>
-</table>
+### Raw HTML
+
+```html
+There are <span class="badge badge-primary">12</span> pieces but only <span class="badge badge-danger">5</span> of them are <span class="label label-danger">usable</span> and <span class="badge">12</span> are <span class="label label-primary">unusable</span>.
+```
+
+### Result
+
+There are <span class="badge badge-primary">12</span> pieces but only <span class="badge badge-danger">5</span> of them are <span class="label label-danger">usable</span> and <span class="badge">12</span> are <span class="label label-primary">unusable</span>.
+
+### Configuration
+
+- `badge-class` - css class for simple badge
+- `badge-accent-class` - css class for accent badge
+- `label-class` - css class for simple label
+- `label-accent-class` - css class for accent label

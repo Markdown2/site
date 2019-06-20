@@ -1,0 +1,44 @@
+.badge {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0 3px;
+}
+.badge-primary  {
+    background-color: blue;
+    color: aliceblue;
+}
+.badge-danger  {
+    background-color: brown;
+    color: aliceblue;
+}
+.label {
+    display: inline-block;
+    padding: 0 5px;
+}
+.label-primary  {
+    background-color:lightblue;
+}
+.label-danger  {
+    background-color: lightcoral;
+}
+.alert h4 {
+    margin-top: 0;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-primary {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+

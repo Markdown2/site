@@ -33,8 +33,8 @@ extra:
   search:
     language: 'ru, en'
 
-#extra_css: 
-#    - css/style.css
+extra_css: 
+    - css/style.css
 #    - css/highlights.css
 
 # Other
@@ -53,4 +53,7 @@ pages:
     - 'О Документации': 'index.md'
 - Documentation: 
     - 'Typography': 'typography.md'
+    - 'Elements': 'elements.md'
+    - 'Rich Media': 'media.md'
+    - 'Placeholders': 'placeholders.md'
     - 'Parser config': 'configuration.md'

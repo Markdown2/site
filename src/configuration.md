@@ -30,14 +30,18 @@ Here is the list of all values.
 
 ### Syntax
 
-| Value       | Default     | Description                          |
-| ----------- | ----------- | ------------------------------------ |
-| big         | 1.25        | What would be big text size in em    |
-| small       | 0.75        | What would be small text size in em  |
-| code        | highlightjs | What engine to use to highlight code |
-| code-theme  | dracula     | Theme for code highlights            |
-| badge-class | 'badge'     | What CSS class to assign to badges   |
-| label-class | 'label'     | What CSS class to assign to labels   |
-| table-class | 'table'     | What CSS class to assign to tables   |
-| img-class   | 'img'       | What CSS class to assign to images   |
-| kbd-class   | 'kbd'       | What CSS class to assign to kbd      |
+| Value              | Default               | Description                                    |
+| ------------------ | --------------------- | ---------------------------------------------- |
+| big                | 1.25                  | What would be big text size in em              |
+| small              | 0.75                  | What would be small text size in em            |
+| code               | highlightjs           | What engine to use to highlight code           |
+| code-theme         | dracula               | Theme for code highlights                      |
+| badge-class        | 'badge badge-primary' | What CSS class to assign to badges             |
+| badge-accent-class | 'badge badge-ganger'  | What CSS class to assign to badges with accent |
+| label-class        | 'label label-primary' | What CSS class to assign to labels             |
+| label-accent-class | 'label label-danger'  | What CSS class to assign to labels with accent |
+| alert-class        | 'alert alert-primary' | What CSS class to assign to alerts             |
+| alert-accent-class | 'alert alert-danger'  | What CSS class to assign to alerts with accent |
+| table-class        | 'table'               | What CSS class to assign to tables             |
+| img-class          | 'img'                 | What CSS class to assign to images             |
+| kbd-class          | 'kbd'                 | What CSS class to assign to kbd                |

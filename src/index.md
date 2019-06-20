@@ -4,7 +4,7 @@ Thanks to [John Gruber](http://daringfireball.net/) for Markdown! This is really
 
 But it is really getting outdated. That is proved by so many Markdown extensions like [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) developed last years.
 
-The aim of this project is to create public, open source Markdown specification.
+The aim of this project is to create public, open source Markdown specification. Let's make Markdown great again!
 
 # Concepts
 

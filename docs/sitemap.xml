@@ -11,6 +11,21 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>http://markdown2.github.io/Documentation/elements/</loc>
+     <lastmod>2019-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://markdown2.github.io/Documentation/media/</loc>
+     <lastmod>2019-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://markdown2.github.io/Documentation/placeholders/</loc>
+     <lastmod>2019-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>http://markdown2.github.io/Documentation/configuration/</loc>
      <lastmod>2019-06-20</lastmod>
      <changefreq>daily</changefreq>
