@@ -203,17 +203,17 @@ First parameter is a user name and second it snippet short code name. last one i
 #### Markdown
 
 ```text
-{(gist::vdemedes/5220932::gistfile1.js)}
+{(gist::Serhioromano/9738785::readme.md)}
 ```
 
 #### Raw HTML
 
 ```html
-<script src="https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js"></script>
+<script src="https://gist.github.com/Serhioromano/9738785.js?file=readme.md"></script>
 ```
 
 #### Result
 
-<script src="https://gist.github.com/vdemedes/5220932.js?file=gistfile1.js"> </script>
+<script src="https://gist.github.com/Serhioromano/9738785.js?file=readme.md"></script>
 
 File parameter is optional and can be used only in Gists with few files when you want to show only one of them.
