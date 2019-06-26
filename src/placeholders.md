@@ -1,6 +1,5 @@
 # Placeholders
 
-
 Placeholders are invisible marks that add additional functionality.
 
 ## Readmore
@@ -19,10 +18,14 @@ Place to separate file into 2 parts if one part have to be show in the list. Thi
 
 Will generate table of content in the place where placeholder is placed. It will use H1-H3 to create structure and name #anchors.
 
+### Configuration
+
+- `toc.depth` - Depth of titles to create TOC
+
 ## Pagebreak
 
 ```html
-<!-- page-break -->
+<!-- md-page-break -->
 ```
 
 Add page break. Especially useful when generating PDF or Word file from Markdown.

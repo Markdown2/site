@@ -6,11 +6,9 @@ The syntax is simple, key:value object style
 {
     "columns": 2,
     "big": 1.35,
-    "footer": {
-        "author": "Sergey romanov",
-        "date": TRUE,
-        "email" : "serg@mail.ru",
-        "source": "http://link/to/source"
+    "toc": {
+        "depth": 2,
+        "style": "book",
     }
 }
 ```
@@ -21,12 +19,13 @@ Here is the list of all values.
 
 ### Document
 
-| Value  | Default | Description                              |
-| ------ | ------- | ---------------------------------------- |
-| cols   | 1       | Number of columns                        |
-| css    | []      | Array of additional CSS files to include |
-| js     | []      | Array of additional JS files to include  |
-| disqus |         | Insert DISQUS comment                    |
+| Value     | Default | Description                              |
+| --------- | ------- | ---------------------------------------- |
+| cols      | 1       | Number of columns                        |
+| css       | []      | Array of additional CSS files to include |
+| js        | []      | Array of additional JS files to include  |
+| disqus    |         | Insert DISQUS comment                    |
+| toc.depth | 2       | Build TOC with H1-H2 or more             |
 
 ### Syntax
 

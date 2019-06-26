@@ -49,8 +49,8 @@ markdown_extensions:
 
 # Pages configuration
 pages:
-- Введение: 
-    - 'О Документации': 'index.md'
+- Home: 
+    - 'Introduction': 'index.md'
 - Documentation: 
     - 'Typography': 'typography.md'
     - 'Elements': 'elements.md'
